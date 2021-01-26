@@ -1,6 +1,7 @@
 var express = require('express');
 var {data} = require('./data');
 const app = express();
+const path = require('path');
 
 app.use(express.static(path.join(__dirname, 'build')));
 
