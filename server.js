@@ -22,4 +22,4 @@ app.get("/api/products/:id", (req, res)=>{
         res.status(404).send({msg: "Product not found"});
 })
 
-app.listen(5000, () => {console.log("Server started at http://localhost:5000")})
+app.listen(process.env.PORT || 5000, () => {console.log("Server started at http://localhost:5000")})
